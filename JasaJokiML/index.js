@@ -30,3 +30,27 @@ function hitungHarga (mulai,finish){
     }
     return total
 } 
+
+
+function validasiNoHp(number){
+    if(isNaN(number)){
+        return false
+    } 
+    return true
+}
+
+function submitted (event) {
+    event.preventDefault()
+    let name = document.getElementById('nama').value
+    let nohp = document.getElementById('contact').value
+
+    if (validasiNoHp(nohp)) {
+        localStorage.setItem("name", name)
+        localStorage.setItem("contact", nohp)
+    
+        window.location.href="index2.html";
+    } else {
+        alert("Nomor hp ya nomor dong !")
+    }
+
+}
