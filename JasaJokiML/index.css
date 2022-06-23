@@ -32,6 +32,7 @@ body {
   width: 500px;
   border-radius: 20px;
   padding: 40px;
+  font-family: "Kdam Thmor Pro", sans-serif;
 }
 
 .title {
@@ -58,9 +59,10 @@ body {
   padding: 10px;
   border-radius: 7px;
   background-color: rgba(255, 255, 255, 0.25);
-  color: #a6a6a6;
+  color: white;
   border: 0;
   font-size: 20px;
+  font-family: "Kdam Thmor Pro", sans-serif;
 }
 
 .input select {
@@ -84,5 +86,26 @@ body {
 
 .input {
   margin-bottom: 20px;
+  font-family: "Kdam Thmor Pro", sans-serif;
 }
 
+#teamLogo {
+  position: absolute;
+  right: 1%;
+  top: 2%;
+  opacity: 60%;
+}
+
+#contact,
+#nama {
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer {
+  margin-top: 20px;
+  bottom: 0%;
+
+  color: #eaeaea;
+  text-align: center;
+  font-size: 12px;
+}
