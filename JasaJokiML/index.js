@@ -86,8 +86,3 @@ function kembali() {
 function kembaliHome() {
   window.location.href = "index.html";
 }
-
-
-document.querySelector('img').onclick = () => {
-  window.location.href = "index.html"
-}

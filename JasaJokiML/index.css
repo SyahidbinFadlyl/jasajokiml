@@ -25,6 +25,11 @@ body {
   font-family: sans-serif;
   font-size: 20px;
 }
+#testimoni {
+  margin-top:0.5cm; 
+  margin-bottom:0;
+  color: white;
+}
 .container {
   margin-top: 90px;
   margin-left: 120px;
