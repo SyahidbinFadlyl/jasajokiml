@@ -68,3 +68,15 @@ function gasJoki(event) {
     event.preventDefault()
     window.location.href="index3.html"
 }
+
+document.getElementById('outputNama').value=localStorage.getItem('name')
+document.getElementById('No Hp').value=localStorage.getItem('contact')
+document.getElementById('Total Harga').value=localStorage.getItem('totalHarga')
+
+function kembali () {
+    window.location.href="index2.html"
+}
+
+function kembaliHome () {
+    window.location.href="index.html"
+}
