@@ -90,7 +90,7 @@ body {
 }
 
 #teamLogo {
-  position: absolute;
+  position:fixed;
   right: 1%;
   top: 2%;
   opacity: 60%;
@@ -108,4 +108,46 @@ body {
   color: #eaeaea;
   text-align: center;
   font-size: 12px;
+}
+
+#mythicG {
+  position:relative;
+  top:24.5cm;
+  left:0.3cm;
+  height: 100px;
+}
+#mythic {
+  position:absolute;
+  top:21.35cm;
+  left:0.3cm;
+  height: 100px;
+}
+#legend {
+  position:absolute;
+  top:18.18cm;
+  left:0.4cm;
+  height: 100px;
+}
+#epic {
+  position:absolute;
+  top:15.01cm;
+  left:0.45cm;
+  height: 100px;
+}
+#grandmaster {
+  position:absolute;
+  top:11.84cm;
+  left:0.25cm;
+  height: 100px;
+}
+#master {
+  position:absolute;
+  top:8.67cm;
+  left:0.35cm;
+  height: 100px;
+}#elite {
+  position:absolute;
+  top:5.5cm;
+  left:0.3cm;
+  height: 100px;
 }
