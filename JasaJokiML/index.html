@@ -8,47 +8,24 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div style="position: absolute; top: 10px; right: 50px; ">
+      <img src="gambar/Hactiserve.png" width="200" >
+    </div>
     <div class="container">
       <img id="logo" src="mlbb.png" alt="" />
       <h1 class="title">JOKI<br /><span>GAME</span></h1>
-      <form>
-        <!-- <div class="input">
-          <label for="rank">Rank Anda</label>
-          <select id="rank" name="rank">
-            <option value="">Pilih Rank</option>
-            <option value="Warrior">Warrior</option>
-            <option value="Elit">Elit</option>
-            <option value="Master">Master</option>
-            <option value="Grand Master">Grand Master</option>
-            <option value="Epic">Epic</option>
-            <option value="Legend">Legend</option>
-            <option value="Mytical">Mytical</option>
-            <option value="Mytical Glory">Mytical Glory</option>
-          </select>
-        </div>
-        <div class="input">
-          <label for="jokirank">Joki Sampe Mana?</label>
-          <select id="jokirank" name="jokirank">
-            <option value="Warrior">Warrior</option>
-            <option value="Elit">Elit</option>
-            <option value="Master">Master</option>
-            <option value="Grand Master">Grand Master</option>
-            <option value="Epic">Epic</option>
-            <option value="Legend">Legend</option>
-            <option value="Mytical">Mytical</option>
-            <option value="Mytical Glory">Mytical Glory</option>
-          </select>
-        </div> -->
+      <form onsubmit="submitted(event)">
         <div class="input">
           <label for="nama">Nama</label>
-          <input type="text" id="nama" name="nama" />
-          <label for="contact">No. Hp</label>
-          <input type="text" id="contact" name="contact" />
+          <input required type="text" id="nama" name="nama" />
+          <label for="contact">No. Handphone</label>
+          <input required type="text" id="contact" name="contact" />
         </div>
         <div>
-          <button class="submit-button">DAFTAR</button>
+          <button type="submit" class="submit-button">DAFTAR</button>
         </div>
       </form>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
