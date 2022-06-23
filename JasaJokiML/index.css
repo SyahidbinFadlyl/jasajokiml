@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+#logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1rem;
+  height: 10rem;
+}
+body {
+  background-image: url("gambar/Bo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+#body {
+  background-image: url(gambar/Bo.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.container {
+  margin-top: 90px;
+  margin-left: 120px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 500px;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.title {
+  margin-top: 0;
+  display: block;
+  text-align: center;
+  color: #4d84e3;
+}
+
+.title span {
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+.input label {
+  color: white;
+}
+
+.input select,
+.input input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #a6a6a6;
+  border: 0;
+  font-size: 20px;
+}
+
+.input select {
+  border-right: 13px solid #00000000;
+}
+
+.input select option {
+  color: black;
+}
+
+.submit-button {
+  margin-top: 50px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background-color: #4d84e3;
+}
+
+.input {
+  margin-bottom: 20px;
+}

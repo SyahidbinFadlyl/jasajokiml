@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasa Joki Mobile Legend</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body id="body">
+    <div class="container">
+      <form>
+        <img id="logo" src="mlbb.png" alt="" />
+        <h1 class="title">JOKI<br /><span>GAME</span></h1>
+
+        <div class="input">
+          <label class="label" for="rank">Rank Anda</label>
+          <select id="rank" name="rank" onchange="onCurrentRankSelect(event)">
+            <option value="Warrior" data-thumbnail="warrior.webp">
+              Warrior
+            </option>
+            <option value="Elit">Elit</option>
+            <option value="Master">Master</option>
+            <option value="Grand Master">Grand Master</option>
+            <option value="Epic">Epic</option>
+            <option value="Legend">Legend</option>
+            <option value="Mytical">Mytical</option>
+          </select>
+        </div>
+
+        <div class="input">
+          <label class="label" for="jokirank">Joki Sampe Mana?</label>
+          <select
+            id="jokirank"
+            name="jokirank"
+            onchange="onTargetRankSelect(event)"
+          >
+            <option value="Elit">Elit</option>
+            <option value="Master">Master</option>
+            <option value="Grand Master">Grand Master</option>
+            <option value="Epic">Epic</option>
+            <option value="Legend">Legend</option>
+            <option value="Mytical">Mytical</option>
+            <option value="Mytical Glory">Mytical Glory</option>
+          </select>
+        </div>
+
+        <div class="input">
+          <label for="totalHarga">TOTAL HARGA</label>
+          <input
+            type="text"
+            id="totalHarga"
+            name="totalHarga"
+            value="0"
+            readonly
+          />
+
+          <!-- <label for="contact">contact</label>
+          <input type="text" id="contact" name="contact" /> -->
+          <!--  -->
+          <!-- <input class="button" type="button" value="GAS JOKI" /> -->
+          <button class="submit-button">GAS JOKI</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
