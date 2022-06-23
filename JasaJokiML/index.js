@@ -1,23 +1,31 @@
-var rank = ["Warrior", "Elite", "Master","Grandmaster","Epic","Legends","Mythic","Mythical Glory"]
-var harga = [10000, 15000, 25000, 25000, 50000, 60000, 150000]
-var hargaMGWin = 25000
-// 0 ->1 = 0
-// 0 -> 3 =
-function hitungHarga (mulai,finish){
-    var a = 0
-    var numStart = 0    
-    var numFinish = 0
-    var total = 0
-    while(a < rank.length){
-        if(mulai === rank[a]){
+var storedItems = localStorage.getItem("storedItems");
+
+function hitungHarga(event){
+    event.preventDefault()
+    let mulai = document.getElementById("rank").value;
+    localStorage.setItem("currentRank",mulai);
+    let finish = document.getElementById("jokirank").value;
+    localStorage.setItem("targetRank",finish);
+    let rankArr = ["Warrior", "Elite", "Master","Grand Master","Epic","Legend","Mythic","Mythic Glory"]
+    let harga = [10000, 15000, 25000, 25000, 50000, 60000, 150000]
+    let a = 0
+    let numStart = 0
+    let numFinish = 0
+    let total = 0
+
+
+    while(a < rankArr.length){
+        if(mulai === rankArr[a]){
             numStart = a
         }
-        if(finish === rank[a]){
+        if(finish === rankArr[a]){
             numFinish = a
         }
         a = a + 1
     }
-    var numJumlah = numFinish - numStart
+
+    let numJumlah = numFinish - numStart
+
     if(numJumlah < 0){
         alert("Mau turun rank kah?")
     }else if(numJumlah === 0){
@@ -28,7 +36,8 @@ function hitungHarga (mulai,finish){
             numStart ++
         }
     }
-    return total
+    document.getElementById("totalHarga").value = total
+    localStorage.setItem("totalHarga",total);
 } 
 
 
@@ -53,4 +62,9 @@ function submitted (event) {
         alert("Nomor hp ya nomor dong !")
     }
 
+}
+
+function gasJoki(event) {
+    event.preventDefault()
+    window.location.href="index3.html"
 }
