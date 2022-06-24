@@ -63,7 +63,7 @@ function submitted(event) {
     localStorage.setItem("name", name);
     localStorage.setItem("contact", nohp);
 
-    window.location.href = "checkout-form.html";
+    window.location.href = "hitung-harga.html";
   } else {
     alert("Nomor hp ya nomor dong !");
   }
