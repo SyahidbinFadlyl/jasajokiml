@@ -63,7 +63,7 @@ function submitted(event) {
     localStorage.setItem("name", name);
     localStorage.setItem("contact", nohp);
 
-    window.location.href = "index2.html";
+    window.location.href = "hitung-harga.html";
   } else {
     alert("Nomor hp ya nomor dong !");
   }
@@ -71,7 +71,7 @@ function submitted(event) {
 
 function gasJoki(event) {
   event.preventDefault();
-  window.location.href = "index3.html";
+  window.location.href = "checkout-form.html";
 }
 
 document.getElementById("outputNama").value = localStorage.getItem("name");
@@ -80,7 +80,7 @@ document.getElementById("Total Harga").value =
   localStorage.getItem("totalHarga");
 
 function kembali() {
-  window.location.href = "index2.html";
+  window.location.href = "hitung-harga.html";
 }
 
 function kembaliHome() {
